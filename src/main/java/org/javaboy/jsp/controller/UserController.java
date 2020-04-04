@@ -10,6 +10,6 @@ public class UserController {
     @GetMapping("get")
     public String get(String username,Model model){
         model.addAttribute("username",username);
-        return "hello";
+        return "user/hello";
     }
 }
